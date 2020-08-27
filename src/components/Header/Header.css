@@ -19,7 +19,7 @@ header {
 	display: flex;
 }
 .cart-icon sup {
-	--size: 16px;
+	--size: 14px;
 	margin-left: 5px;
 	background: #ff331e;
 	font-size: 70%;

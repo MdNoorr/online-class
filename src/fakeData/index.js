@@ -1,4 +1,3 @@
-import androids from "./course";
 import course from "./course";
 
 const fakeData = [...course];
