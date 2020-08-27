@@ -1,4 +1,4 @@
-var course = [
+const course = [
 	{
 		title: "The Complete JavaScript Course 2020: Build Real Projects!",
 		author: "Jonas Schmedtmann",

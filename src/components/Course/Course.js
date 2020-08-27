@@ -21,7 +21,7 @@ const Course = (props) => {
 						<strong>Rating:</strong> {rating}
 					</div>
 					<p>
-						<strong>Price:</strong> {price}
+						<strong>Price:</strong> ${price}
 					</p>
 					<Button variant="dark" size="sm" block onClick={() => props.handleEnrollNow(props.course)}>
 						<FontAwesomeIcon icon={faShoppingCart} /> Enroll now

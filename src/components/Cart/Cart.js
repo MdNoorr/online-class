@@ -7,8 +7,8 @@ import { Button } from "react-bootstrap";
 const Cart = (props) => {
 	const { cart } = props;
 	const total = cart.reduce((total, course) => total + course.price, 0);
-	const tax = total / 20;
-	const discount = total / 10;
+	const discount = total * 0.2;
+	const tax = total * 0.1;
 
 	const getRoundFigure = (num) => {
 		const precision = num.toFixed(2);
@@ -27,15 +27,16 @@ const Cart = (props) => {
 					<span>${getRoundFigure(total)}</span>
 				</div>
 				<div>
-					<span>Discount (10%): </span>
+					<span>Discount (20%): </span>
 					<span>${getRoundFigure(discount)}</span>
 				</div>
 				<div>
-					<span>Tax (20%): </span>
+					<span>Tax (10%): </span>
 					<span>${getRoundFigure(tax)}</span>
 				</div>
 				<div>
-					<span>Grand total:</span> <span>${getRoundFigure(total + tax - discount)}</span>
+					<span>Grand total: </span>
+					<span>${getRoundFigure(total + tax - discount)}</span>
 				</div>
 
 				<Button variant="dark" size="sm" block>

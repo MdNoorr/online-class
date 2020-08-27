@@ -1,10 +1,10 @@
 .cart {
 	position: -webkit-sticky;
 	position: sticky;
-	top: 20px;
+	top: 80px;
 	border-left: 1px solid #e3e3e3;
-	padding: 15px 0;
 	padding-left: 25px;
+	padding-bottom: 15px;
 }
 .cart .header {
 	text-align: center;
